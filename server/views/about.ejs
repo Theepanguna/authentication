@@ -1,0 +1,133 @@
+<!-- views/about.ejs
+   Pratheepan Gunaratnam
+   Student id :- 301320478
+   06-02-23
+
+-->
+
+
+<%-include partials/header.ejs%>
+<main class="container">
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>Welcome to the <%=title%> Page </h1> 
+</div>
+
+
+<%-include partials/main_nav.ejs%>
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Pratheepan Gunaratnam </h2>
+      <div class="container">
+        <img src="/Assets/images/Photo.JPG" class="img-rounded" alt="Photo" width="320" height="436"> 
+      </div>
+      
+
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      
+      <h5>Profile Summary, Jan 23, 2023</h5>
+      
+      <p> • Competent Electronic Engineer with more than nine years of experience in teaching, designing, embedded
+        programming and implementing an electronic system for a wide range of applications.</p>
+        <p>  • An effective professional in conducting workshops based on Robotic Operating System (ROS)., Arduino ,
+        VHDL, Robotics and Matlab. </p>
+      </p> • Experienced in Supervising and providing research guidance to undergraduates.</p>
+    </p> • Excellent programming skills in various platforms and good in windows and Linux system/Network
+        administration (RedHat/ Mageia).</p>
+      </p> • Great analytical, problem solving and decision-making skills with excellent oral and written English
+        communication skills to take up any challenges and convert them to socio-economic advantages.</p>
+      
+      
+      <h2>Resume</h2>
+      <h5>Updated on, Feb 5, 2023</h5>
+
+      <ul class="side-menu side-menu-notifications">
+        <li>
+          <a href="/Assets/Documents/Pratheepan CV_web.pdf" target="_blank"> <i class="fa-solid fa-download fa-flip"></i> Resume </a>
+        </li>
+    </ul>
+
+    <h3> Research Portfolio </h3>
+      
+      <p> 
+        My research interest has been centred around Hardware programming (Embedded and FPGA) to develop solutions, methods,
+        processes and protocols by integrating Machine learning and Artificial intelligence. I am conversant with PIC microcontroller
+        and Arduino based Platform and their related Programming software further, I have been working knowledge and experience in
+        VHDL and Xilinx software Platform. Recently developed Teaching and/ or learning modules have been implemented in Spartan
+        7 development board.</p> 
+        Current research topics include:
+        <p>• Adaptive learning platform based on ROS for children with learning difficulties such as ADHD or Autism.</p>
+        <p>• Image processing based Electric Vehicle charging Robot ARM.</p>
+        <p>• Portable Vision aid device using Image processing</p>
+        <h3>Master Research</h3>
+        <h6>3D Tracking Capacitance Based ROS Controlled Robot Arm</h6>
+        <p>Ø Synopsis</p>
+      <p> This project addresses the design procedure of 3D tracking capacitance based ROS controlled Robot Arm. A Robot
+        operating system (ROS) is used to model and control the robotic arm with 4 degree of freedom (DOF) to imitate the
+        virtual (Simulation) to reality and Physical motion to reality without wearing any sensors at low cost.
+        ROS is middleware upon which robotics system can be developed or constructed. The basic controlling operation can
+        be categorized into two sections. Initial process begins with RVIZ simulator control wupied with Capacitive based 3D
+        tracking mechanism was used to control the robotic arm and the simulator can be updated by detecting the hand gesture
+        in the 𝟏𝟐 × 𝟏𝟐 × 𝟏𝟐 𝐜𝐦𝟑 cubic box range. Arduino Mega microcontroller development board is used as the
+        interconnection between the Robot arm and the ROS platform. The communication was established via message and
+        services (msg ans srv).</p>
+      <p>Ø Discovery </p>
+    <p>  • Developed and tested/ implemented successfully an algorithm to control 4DOF of Robot Arm effectively by using a
+        capacity based hand gesture control.</p>
+      <p> Ø Publication</p>
+      <p>   • 3D Tracking Capacitance Based ROS controlled Robot Arm
+        Presented at 26th Annual Technical Conference of IET Sri Lanka Network 2019. (ISSN: 2345-9558).</p>
+        <h3>Undergraduate Research</h3>
+        <h6>Development of a Computer Numerical Control (CNC) Drawing Machine</h6>
+      <p> Ø Synopsis</p>
+    <p> Developed a easy to understand learning module of a prototype computer numerical control (CNC) drawing machine.
+        The module can be used to understand and analyse the performance and functionality related issues of CNC machines.
+        This resulted in cost effectiveness and easily controlled by simple motor controllers. Stepper motors and controller
+        circuits are employed to control the axes of the CNC machine. The real time CNC controller software (Kcam) is utilised
+        to evaluate the system. The input file is created as G-code. The findings of this project can be used as base information
+        in further development to realize a real world system that can be used in practice.</p>
+      <p>Ø Discovery</p>
+    <p> • Use of Low cost and Recyclable Materials to effectively learn the performance of CNC drawing machine.</p>
+      <p> Ø Publication</p>
+    <p> Development of a computer numerical control (CNC) drawing machine at present around the world 2013,
+        organized by IET young professionals' section, Sri Lanka</p>
+        
+        <h3> Industry Research</h3>
+        <h6>Ethernet Bootloader application for PIC microcontroller</h6>
+       
+      <p>Ø Synopsis </p>
+    <p>This research mainly focused on programming a microcontroller remotely. I developed a Software (GUI) by using the
+        Windows Presentation Foundation (WPF) application in the visual studio along with Trivial File Transfer Protocol (TFTP).
+        This GUI is used to send the Hex code to program the client RFID reader (Micro controller) by using the Internet Boot
+        loading through TCP/IP protocol. This finding help to update the reader´s reading range remotely without visiting the
+        place. </p>
+      <p> Ø Discovery </p>
+    <p>Developed a platform to remotely program a microcontroller to control the RFID reading range through ethernet
+        bootlaoding </p>
+
+
+      
+   
+     
+    </div>  
+  </div>
+</div>
+<script>
+  for (var i = 0; i < document.links.length; i++) {
+      if (document.links[i].href == document.URL) {
+          document.links[i].className = 'active';
+      }
+  }
+  </script>
+
+</main>
+
+
+<%-include partials/bottom_nav.ejs%>
+
+<%-include partials/footer.ejs%>
+  
+

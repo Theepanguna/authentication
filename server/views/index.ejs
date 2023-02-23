@@ -1,0 +1,85 @@
+<!-- views/index.ejs
+   Pratheepan Gunaratnam
+   Student id :- 301320478
+   06-02-23
+
+-->
+
+<%-include partials/header.ejs%>
+
+<main class="container">
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>Welcome to the <%=title%> Page </h1> 
+</div>
+
+
+<%-include partials/main_nav.ejs%>
+
+<div class="container" style="margin-top:30px">
+
+    <div class="row">
+      <div class="col-sm">
+        <img src="/Assets/images/logo.png" alt="Photo" width="450" height="450"> </div>
+
+        <div class="col-sm">
+  <h2> Mission statement</h2> <br>
+      
+  <h3>  Be Creative to be get Inspired </h3><br>
+        <br>
+          About Me:-
+        <a href="/about" class="btn btn-primary btn-sm btn-lg active" role="button" aria-pressed="true">Link</a>
+      </p>
+      <br><br>
+      <h3>Social Interaction Links</h3>
+      <ul class="nav nav-pills flex-column">
+       
+            <li class="nav-item ">
+          <a class="nav-link" href="https://www.linkedin.com/in/pratheepangunaratnam"> <i class="fa-brands fa-linkedin fa-bounce"></i> Linked-In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="https://www.instagram.com/mydrawingfantasy/?hl=en"><i class="fa-brands fa-instagram fa-bounce"></i>  Instagram</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.facebook.com/mydrawingfantasy/"><i class="fa-brands fa-facebook fa-bounce"></i>  Facebook</a>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.youtube.com/channel/UCYYn4Eh9LIT5hCi9or_ce0A"><i class="fa-brands fa-youtube fa-bounce"></i>  youtube</a>
+          </li>
+        </li>
+      </ul>
+      <script>
+        for (var i = 0; i < document.links.length; i++) {
+            if (document.links[i].href == document.URL) {
+                document.links[i].className = 'active';
+            }
+        }
+        </script>
+
+
+  
+      </div>
+    
+      <p>
+     <br><br>
+      <h5>This Website provides the full information about myself, the projects i have worked with for the past 10 years and the service provided by myself </h5>
+    </p>
+      <p>Feel free to navigate through the content and leave your thoughts and comments through Contact me page</p>
+      
+    </div>
+  </div>
+  <script>
+    for (var i = 0; i < document.links.length; i++) {
+        if (document.links[i].href == document.URL) {
+            document.links[i].className = 'active';
+        }
+    }
+    </script>
+  
+
+</main>
+
+
+<%-include partials/bottom_nav.ejs%>
+
+<%-include partials/footer.ejs%>
+  
+

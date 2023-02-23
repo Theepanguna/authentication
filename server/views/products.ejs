@@ -1,0 +1,161 @@
+<!-- views/project.ejs
+   Pratheepan Gunaratnam
+   Student id :- 301320478
+   06-02-23
+
+-->
+<%-include partials/header.ejs%>
+<main class="container">
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <h1>Welcome to the <%=title%> Page </h1> 
+  </div>
+  
+  <%-include partials/main_nav.ejs%>
+
+  <div class="container" style="margin-top:30px">
+
+    <div class="row">
+      <h2> Project 1:- 3D Tracking Capacitance Based ROS Controlled Robot Arm </h2>
+      <div class="col">
+      
+      <div class="embed-responsive ">
+        <iframe width="650" height="400" class="embed-responsive-item" src="https://www.youtube.com/embed?v=KmxpXYCfIMw&list=UUZk71drPTzabuDPQiYQW-Ew&index=3"></iframe>
+      </div> <br>
+      <div class="embed-responsive ">
+        <iframe width="650" height="400"class="embed-responsive-item" src="https://www.youtube.com/embed?v=FTjpnc0E9RA&list=UUZk71drPTzabuDPQiYQW-Ew&index=2" ></iframe>
+      </div>
+      <div class="embed-responsive ">
+        <iframe width="650" height="400" class="embed-responsive-item" src="https://www.youtube.com/embed?v=wLCZi5qf6XA&list=UUZk71drPTzabuDPQiYQW-Ew&index=1"></iframe>
+      </div>
+    </div>
+  
+    
+      <div class="col">
+      <h2> Summary</h2>
+      <p class="text-justify">This project presents a design procedure of
+        3d tracking capacitance based ROS controlled robot
+        arm. A Robot operating system (ROS) was modelled to
+        control the robotic arm with 4 degree of freedom (DOF)
+        to imitate the virtual (Simulation) to reality. ROS is
+        middleware upon which robotics system can be developed or constructed. The basic controlling
+        operation can be categorized into two sections. Initial
+        process begins with RVIZ simulator control and then
+        control by 3D Cartesian coordinates given by ROS
+        commands to control the arm. The arm covers quarter
+        sphere with radius of 31 cm approximately. Capacitive
+        based 3D tracking mechanism was used to control the
+        robotic arm and update the Simulator by detecting hand
+        gesture. The hand gesture movement was limited with-in
+        𝟏𝟐 × 𝟏𝟐 × 𝟏𝟐 𝐜𝐦𝟑 cubic box</p>
+      </div>
+
+      <h2> Project 2:- Monotone creation using Arduino </h2>
+      <div class="col">
+        
+        <div class="embed-responsive ">
+          <iframe width="650" height="400" class="embed-responsive-item" src="https://www.youtube.com/embed?v=j1XXzCuFzfI&list=PLYny285AWtIMc-SUxkRZLtmp9vRkcx1f3"></iframe>
+        </div> <br>
+      </div>
+        <div class="col">
+      <h2> Summary</h2>
+      <p class="text-justify"></p> This project presents a design procedure of
+        Monotone creation by using the tone library in Arduino. Harry Potter Theme is generated in this code.</p>
+        <br>
+        <p> Refer to the follwoing code for more details <br>
+          unsigned int notes1[] = {261, 311, 277, 233, 415,391,349,207, 523,622,554,466,830,783,698,415 };<br>
+unsigned char song[]= {0,1,1,0,1,1,0,1,1,2,2,0,3,0,1,1,0,1,1,0,1,1,2,2,0,3,7,3, 0,1, 1,4,5, 6,1,1, 0,1,6, 1,1,6, 8,9,9,8,9,9,8,9,9,10,10,8,11,8,9,9,8,9,9,8,9,9,10,10,8,11,15,11, 8,9, 9,12,13, 14,9,9, 8,9,14, 9,9,14};
+unsigned int del[]=   {1,1,10,1,1,10,1,1,5,2,2,2,3,1,1,10,1,1,10,1,1,5,2,2,2,3,3,3, 8,1, 3,3,2, 3,1,3,  2,3,5, 2,3,5,1,1,10,1,1,10,1,1,5,2,2,2,3,1,1,10,1,1,10,1,1,5,2,2,2,3,3,3, 8,1, 3,3,2, 3,1,3,  2,3,5, 2,3,5 };<br>
+void setup(){<br>
+  DDRB= B11111111;<br>
+  PORTB= B11111111;
+}<br>
+
+void loop(){<br>
+
+      for(int l=0;l!=84;l++){<br>
+         speaker(notes1[song[l]],del[l]*30);<br>
+         _delay_ms(50);
+      }
+   }<br>
+
+void speaker(unsigned int f,unsigned int r){<br>
+   unsigned long int t;<br>
+   t=500000/f;        // hlaf of the time periodf switching on the portb// convertinf f to us.<br>
+   unsigned int k; <br>
+      for(k=0;k!=r;k++){ <br>
+         PORTB|=(1<<3); <br>
+         myDelay(t);  <br>
+         PORTB=0;  <br>
+         myDelay(t);  <br> 
+      }
+}<br>
+
+void myDelay(unsigned long int d){ <br>
+   unsigned long int i; <br>
+   for(i=0;i!=d;i++) <br>
+      _delay_us(1);
+}
+</p>
+      </div>
+
+
+      <h2> Project 3:- DEVELOPMENT OF A COMPUTER NUMERICAL
+        CONTROL (CNC) DRAWING MACHINE </h2>
+      <div class="col">
+        
+        <div class="container ">
+          <img src="/Assets/images/Untitled-1 copy.jpg" class="img-rounded" alt="Photo" width="320" height="436"> 
+        </div> <br>
+      </div>
+        <div class="col">
+      <h2> Summary</h2>
+      <p class="text-justify"> This paper presents a design procedure of a
+      prototype computer numerical control (CNC)
+      drawing machine. The prototype can be used to
+      understand and analyse the performance and
+      functionality related issues of CNC machines also
+      from the point of view of cost effectiveness. Stepper
+      motors and controller circuits are used to control
+      the axes of the CNC machine. The real time CNC
+      controller software (Kcam) is used to evaluate the
+      system. The input file is created as G-code. The
+      facts learnt in this project can be used as base
+      information in further development to realize a real
+      world system that can be used in practice.</p> </div>
+
+
+      <h2> Project 4:- FIR Design and Implemntation Using MATLAB and Code Composer Studio   </h2>
+      <div class="col">
+       
+        <div class="embed-responsive ">
+          <iframe width="650" height="400" class="embed-responsive-item" src="https://www.youtube.com/embed/p6ep5PW64CA"></iframe>
+        </div> <br>
+      </div>
+        <div class="col">
+      <h2> Summary</h2>
+      <p class="text-justify"> This project covers the Design and implementation of  3-band equaliser using tools such as FDATOOL in MATLAB and Code
+        Composer Studio. This project is simulated in MATLAB at the same time implemented in realtime  by using a physical DSP board. The MATLAB Filter
+        Designer is used for filter design and graphing subject to the design
+        requirements as low pass, band pass and HIgh pass.</p>
+
+        <script>
+          for (var i = 0; i < document.links.length; i++) {
+              if (document.links[i].href == document.URL) {
+                  document.links[i].className = 'active';
+              }
+          }
+          </script>
+        
+      
+      
+      
+      
+</main>
+
+
+
+
+<%-include partials/bottom_nav.ejs%>
+
+<%-include partials/footer.ejs%>
+  
