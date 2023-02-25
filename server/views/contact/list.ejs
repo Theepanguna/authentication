@@ -4,12 +4,13 @@
   
 <main class="container">
   <div class="row">
-    <div class="offset-md-1 col-md-10">
+    <div class="offset-md col-md-12">
+      <div class="jumbotron text-center" style="margin-bottom:0">
         <h1><%=title %></h1>
-
+      </div>
         <%-include ../partials/main_nav.ejs%>
           <%if(typeof displayName =='string'&&displayName){%>
-        <a href="/contactlist/add" class="btn btn-primary" role="button"><i class="fas fa-plus-circle"></i>Add a Book</a>
+        <a href="/contactlist/add" class="btn btn-primary" role="button"><i class="fas fa-plus-circle"></i>Add a Contact</a>
         <%}%>
         <br>
         <table class="table table-bordered table-striped table-hover">
@@ -48,6 +49,13 @@
             </table>
         </div>
     </div>
+    <script>
+      for (var i = 0; i < document.links.length; i++) {
+          if (document.links[i].href == document.URL) {
+              document.links[i].className = 'active';
+          }
+      }
+      </script>
   </main>
   
    <!--<h1><%= title %></h1>-->

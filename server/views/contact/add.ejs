@@ -1,13 +1,17 @@
 <%-include ../partials/header.ejs%>
-<%-include ../partials/main_nav.ejs%>
+
 <!--Content for the Add Page-->
 <div class="container">
     <div class="row">
-        <div class="offset-md-2 col-md-3">
-        <h1><%=title%></h1>
+        <div class="offset-md col-md-12">
+            <div class="jumbotron text-center" style="margin-bottom:0">
+                <h1><%=title %></h1>
+              </div>
+               <%-include ../partials/main_nav.ejs%>
+
             <form class="form" method="POST">
                 <div class="form group">
-                    <label for="nameTextField">Contact Title</label>
+                    <label for="nameTextField">Contact Name  </label>
                     <input type="text" class="form control"
                     id="nameTextField"
                     placeholder = "Enter the Contact Name"
@@ -23,7 +27,7 @@
                     </div>
                     
                     <div class="form group">
-                    <label for="publishedTextField">Email Address</label>
+                    <label for="publishedTextField">Email Address  </label>
                     <input type="text" class="form control"
                     id="publishedTextField"
                     placeholder = "Enter the Email Address"
@@ -31,10 +35,11 @@
                     </div>
 
                     
-                    </div>
-                    <button class="btn btn-primary" type="submit"><i class="fas fa-edit"></i>submit</button>
-                    <a href="/bookList" class="btn btn-warning"><i class="fas fa-undo"></i>cancel</a>
+                    
 
+                    <button class="btn btn-primary" type="submit"><i class="fas fa-edit"></i>submit</button>
+                    <a href="/contactlist" class="btn btn-warning"><i class="fas fa-undo"></i>cancel</a>
+                    </div>
                     
 
                 </form>

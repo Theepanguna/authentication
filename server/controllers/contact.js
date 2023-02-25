@@ -22,9 +22,9 @@ module.exports.displayAddPage = (req, res, next) => {
 
 module.exports.processAddPage = (req, res, next) => {
     let newContact = contact({
-        "Contact name": req.body.ContactName,
-        "Contact Number": req.body.ContactNumber,
-        "Email Address": req.body.EmailAddress,
+        "ContactName": req.body.ContactName,
+        "ContactNumber": req.body.ContactNumber,
+        "EmailAddress": req.body.EmailAddress,
         
     });
     contact.create(newContact, (err, contact) => {
@@ -55,9 +55,9 @@ module.exports.processEditPage = (req, res, next) => {
     let id = req.params.id
     let updatedContact = contact({
         "_id": id,
-        "Contact name": req.body.ContactName,
-        "Contact Number": req.body.ContactNumber,
-        "Email Address": req.body.EmailAddress,
+        "ContactName": req.body.ContactName,
+        "ContactNumber": req.body.ContactNumber,
+        "EmailAddress": req.body.EmailAddress,
     });
     console.log('req.body.price' , req.body)
     contact.updateOne({ _id: id }, updatedContact, (err) => {
