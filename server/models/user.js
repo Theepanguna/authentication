@@ -1,3 +1,10 @@
+/*-- models/user.js
+   Pratheepan Gunaratnam
+   Student id :- 301320478
+   23-02-23
+
+*/
+
 //require modules for the model
 let mongoose = require('mongoose');
 let passportLocalMongoose = require('passport-local-mongoose');
