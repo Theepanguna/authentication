@@ -46,7 +46,7 @@ module.exports.displayLoginPage = (req, res, next) => {
     }
     else
     {
-        return res.redirect('/');
+        return res.redirect('/contactlist');
         }
 }
 
