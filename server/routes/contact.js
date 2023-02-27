@@ -34,10 +34,10 @@ router.post('/add',requireAuth,contactController.processAddPage );
 
 /*GET Route for displaying the Edit page - UPDATE operation*/
 
-router.get('/edit/:id', requireAuth,contactController.displayEditPage);
+router.get('/update/:id', requireAuth,contactController.displayEditPage);
 
 /*POST Route for processing the Edit page - UPDATE Operation*/
-router.post('/edit/:id', requireAuth,contactController.processEditPage);
+router.post('/update/:id', requireAuth,contactController.processEditPage);
 
 /*GET to perform Deletion - DELETE Operation */
 router.get('/delete/:id', requireAuth,contactController.performDelete);

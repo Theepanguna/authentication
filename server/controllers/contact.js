@@ -12,16 +12,20 @@ let contact = require('../models/contacts');
 
 //we want to display the bookList
 module.exports.displayContactlist = (req, res, next) => {
-    contact.find((err, contactlist) => {
+    contact.find().sort({ContactName:1}).exec((err, contactlist) => {
         if (err) {
             return console.error(err);
         }
         else {
            //console.log(BookList);
+          
             res.render('contact/list', { title: 'Business Contact List', contactlist: contactlist,displayName:req.user?req.user.displayName:'' });
         }
     });
 }
+
+
+
 module.exports.displayAddPage = (req, res, next) => {
     res.render('contact/add',{title:'Add Contact',displayName:req.user?req.user.displayName:''})
 }
@@ -52,7 +56,7 @@ module.exports.displayEditPage = (req, res, next) => {
             res.end(err);
         }
         else {
-            res.render('contact/edit', { title: 'Edit Contact', contact: contactToEdit,displayName:req.user?req.user.displayName:'' });
+            res.render('contact/update', { title: 'Edit Contact', contact: contactToEdit,displayName:req.user?req.user.displayName:'' });
         }
     });
 }

@@ -42,7 +42,7 @@
                         <td class="text-center col-1"><%=contactlist[count].EmailAddress%></td>
                        
                     
-                        <td class="text-center col-1"><a href="/contactlist/edit/<%=contactlist[count]._id%>" class="btn btn-primary"><i class="fas fa-pencil-alt"></i>Update</a></td>
+                        <td class="text-center col-1"><a href="/contactlist/update/<%=contactlist[count]._id%>" class="btn btn-primary"><i class="fas fa-pencil-alt"></i>Update</a></td>
                         <td class="text-center col-1"><a href="/contactlist/delete/<%=contactlist[count]._id%>" class="btn btn-danger"><i class="fas fa-trash-alt"></i>Delete</a></td>
                         <%}else{%>
                           <td class="text-center col-2"><%=contactlist[count].ContactName%></td>
