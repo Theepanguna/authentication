@@ -5,7 +5,7 @@
         for (button of deleteButton)
         {
             button.addEventListener('click', (event) => {
-                if (!confirm("Are odwdwdkkk")) {
+                if (!confirm("Are odcdscdwdwdkkk")) {
                     event.preventDefault();
                     window.location.assign('/contactlist');
                 }
